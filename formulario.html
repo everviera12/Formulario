@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMULARIO</title>
+
+    <!-- LINK CSS LOCAL -->
+    <link rel="stylesheet" href="formStyle.css" />
+  </head>
+
+  <body>
+    <div class="container-form">
+      <form class="form-user">
+        <h1>REGISTRO PERSONA</h1>
+        <!-- ===== NOMBRE ===== -->
+        <label> NOMBRE </label>
+        <input type="text" required />
+
+        <!-- ===== EDAD ===== -->
+        <label> EDAD</label>
+        <input type="number" required />
+
+        <!-- ===== SEXO ===== -->
+        <div class="sexo-user">
+          <input type="radio" id="mujer" name="sexo-user" required />
+          <label for="mujer">Mujer</label>
+          <input type="radio" id="hombre" name="sexo-user" required />
+          <label for="hombre">Hombre</label>
+        </div>
+
+        <!-- ===== FECHA DE NACIMIENTO ===== -->
+        <label for="fecha-user">Fecha de Nacimiento</label>
+        <input type="date" name="fecha-user" id="fecha-user" required />
+
+        <!-- ===== CORREO ELECTRONICO ===== -->
+        <label for="email-user">Correo electrónico</label>
+        <input type="email" name="email-user" id="email-user" required />
+
+        <!-- ===== BOTON ENVIAR ===== -->
+        <input type="submit" />
+      </form>
+    </div>
+  </body>
+</html>
